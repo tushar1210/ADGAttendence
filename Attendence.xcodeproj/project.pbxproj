@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7819CFA120D849B4005455AD /* AttendenceFireBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7819CFA020D849B4005455AD /* AttendenceFireBase.swift */; };
+		7843200920D968D60046E402 /* AttendenceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7843200820D968D60046E402 /* AttendenceCollectionViewCell.swift */; };
+		7843201120DAC67C0046E402 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7843201020DAC67B0046E402 /* GoogleService-Info.plist */; };
+		788C6FB620D645550033EA58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788C6FB520D645550033EA58 /* AppDelegate.swift */; };
+		788C6FB820D645550033EA58 /* AttendenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788C6FB720D645550033EA58 /* AttendenceViewController.swift */; };
+		788C6FBB20D645550033EA58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 788C6FB920D645550033EA58 /* Main.storyboard */; };
+		788C6FBD20D645560033EA58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 788C6FBC20D645560033EA58 /* Assets.xcassets */; };
+		788C6FC020D645560033EA58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 788C6FBE20D645560033EA58 /* LaunchScreen.storyboard */; };
+		788C6FC820D646600033EA58 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 788C6FC720D646600033EA58 /* Fonts */; };
+		78BA1CCF20D67E9F009C9563 /* AttendenceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BA1CCE20D67E9F009C9563 /* AttendenceTableViewCell.swift */; };
+		78BA1CD120D792D2009C9563 /* Mark Simonson - Proxima Nova Alt Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 78BA1CD020D792D1009C9563 /* Mark Simonson - Proxima Nova Alt Bold.otf */; };
+		FCCFDCEE30FF7850CA35C70A /* Pods_Attendence.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 915D91F635BC36C5FF0606B1 /* Pods_Attendence.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		34BE27CDE083643DB4076B28 /* Pods-Attendence.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attendence.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Attendence/Pods-Attendence.debug.xcconfig"; sourceTree = "<group>"; };
+		7819CFA020D849B4005455AD /* AttendenceFireBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendenceFireBase.swift; sourceTree = "<group>"; };
+		7843200820D968D60046E402 /* AttendenceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendenceCollectionViewCell.swift; sourceTree = "<group>"; };
+		7843201020DAC67B0046E402 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		788C6FB220D645550033EA58 /* Attendence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attendence.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		788C6FB520D645550033EA58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		788C6FB720D645550033EA58 /* AttendenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendenceViewController.swift; sourceTree = "<group>"; };
+		788C6FBA20D645550033EA58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		788C6FBC20D645560033EA58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		788C6FBF20D645560033EA58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		788C6FC120D645560033EA58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		788C6FC720D646600033EA58 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
+		78BA1CCE20D67E9F009C9563 /* AttendenceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendenceTableViewCell.swift; sourceTree = "<group>"; };
+		78BA1CD020D792D1009C9563 /* Mark Simonson - Proxima Nova Alt Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mark Simonson - Proxima Nova Alt Bold.otf"; sourceTree = "<group>"; };
+		915D91F635BC36C5FF0606B1 /* Pods_Attendence.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Attendence.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C617E00C5F5962C5061406F2 /* Pods-Attendence.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attendence.release.xcconfig"; path = "Pods/Target Support Files/Pods-Attendence/Pods-Attendence.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		788C6FAF20D645550033EA58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCCFDCEE30FF7850CA35C70A /* Pods_Attendence.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		057D3FA867FDFB695B82A81D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				915D91F635BC36C5FF0606B1 /* Pods_Attendence.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4AF129C0EC74222183DC16A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34BE27CDE083643DB4076B28 /* Pods-Attendence.debug.xcconfig */,
+				C617E00C5F5962C5061406F2 /* Pods-Attendence.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		788C6FA920D645550033EA58 = {
+			isa = PBXGroup;
+			children = (
+				78BA1CD020D792D1009C9563 /* Mark Simonson - Proxima Nova Alt Bold.otf */,
+				788C6FB420D645550033EA58 /* Attendence */,
+				788C6FB320D645550033EA58 /* Products */,
+				4AF129C0EC74222183DC16A3 /* Pods */,
+				057D3FA867FDFB695B82A81D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		788C6FB320D645550033EA58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				788C6FB220D645550033EA58 /* Attendence.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		788C6FB420D645550033EA58 /* Attendence */ = {
+			isa = PBXGroup;
+			children = (
+				788C6FC720D646600033EA58 /* Fonts */,
+				788C6FB520D645550033EA58 /* AppDelegate.swift */,
+				7819CFA020D849B4005455AD /* AttendenceFireBase.swift */,
+				788C6FB720D645550033EA58 /* AttendenceViewController.swift */,
+				7843200820D968D60046E402 /* AttendenceCollectionViewCell.swift */,
+				78BA1CCE20D67E9F009C9563 /* AttendenceTableViewCell.swift */,
+				788C6FB920D645550033EA58 /* Main.storyboard */,
+				788C6FBC20D645560033EA58 /* Assets.xcassets */,
+				788C6FBE20D645560033EA58 /* LaunchScreen.storyboard */,
+				7843201020DAC67B0046E402 /* GoogleService-Info.plist */,
+				788C6FC120D645560033EA58 /* Info.plist */,
+			);
+			path = Attendence;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		788C6FB120D645550033EA58 /* Attendence */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 788C6FC420D645560033EA58 /* Build configuration list for PBXNativeTarget "Attendence" */;
+			buildPhases = (
+				A70C1ED470D798123FBA051A /* [CP] Check Pods Manifest.lock */,
+				788C6FAE20D645550033EA58 /* Sources */,
+				788C6FAF20D645550033EA58 /* Frameworks */,
+				788C6FB020D645550033EA58 /* Resources */,
+				9BE2126949549D75F894F43F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Attendence;
+			productName = Attendence;
+			productReference = 788C6FB220D645550033EA58 /* Attendence.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		788C6FAA20D645550033EA58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Tushar Singh";
+				TargetAttributes = {
+					788C6FB120D645550033EA58 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 788C6FAD20D645550033EA58 /* Build configuration list for PBXProject "Attendence" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 788C6FA920D645550033EA58;
+			productRefGroup = 788C6FB320D645550033EA58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				788C6FB120D645550033EA58 /* Attendence */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		788C6FB020D645550033EA58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				788C6FC020D645560033EA58 /* LaunchScreen.storyboard in Resources */,
+				788C6FBD20D645560033EA58 /* Assets.xcassets in Resources */,
+				788C6FBB20D645550033EA58 /* Main.storyboard in Resources */,
+				788C6FC820D646600033EA58 /* Fonts in Resources */,
+				78BA1CD120D792D2009C9563 /* Mark Simonson - Proxima Nova Alt Bold.otf in Resources */,
+				7843201120DAC67C0046E402 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9BE2126949549D75F894F43F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Attendence/Pods-Attendence-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/UICircularProgressRing/UICircularProgressRing.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICircularProgressRing.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Attendence/Pods-Attendence-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A70C1ED470D798123FBA051A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Attendence-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		788C6FAE20D645550033EA58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				788C6FB820D645550033EA58 /* AttendenceViewController.swift in Sources */,
+				7843200920D968D60046E402 /* AttendenceCollectionViewCell.swift in Sources */,
+				788C6FB620D645550033EA58 /* AppDelegate.swift in Sources */,
+				78BA1CCF20D67E9F009C9563 /* AttendenceTableViewCell.swift in Sources */,
+				7819CFA120D849B4005455AD /* AttendenceFireBase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		788C6FB920D645550033EA58 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				788C6FBA20D645550033EA58 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		788C6FBE20D645560033EA58 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				788C6FBF20D645560033EA58 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		788C6FC220D645560033EA58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		788C6FC320D645560033EA58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		788C6FC520D645560033EA58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34BE27CDE083643DB4076B28 /* Pods-Attendence.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Attendence/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sarvad-Shetty.Internals";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		788C6FC620D645560033EA58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C617E00C5F5962C5061406F2 /* Pods-Attendence.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Attendence/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sarvad-Shetty.Internals";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		788C6FAD20D645550033EA58 /* Build configuration list for PBXProject "Attendence" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				788C6FC220D645560033EA58 /* Debug */,
+				788C6FC320D645560033EA58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		788C6FC420D645560033EA58 /* Build configuration list for PBXNativeTarget "Attendence" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				788C6FC520D645560033EA58 /* Debug */,
+				788C6FC620D645560033EA58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 788C6FAA20D645550033EA58 /* Project object */;
+}
