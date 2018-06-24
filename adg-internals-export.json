@@ -1,0 +1,46 @@
+{
+  "Test" : {
+    "msg" : 1234,
+    "msg1" : "lel"
+  },
+  "events" : {
+    "event1" : {
+      "date" : "2018-06-07",
+      "dateForCell" : "07-06-2018",
+      "name" : "Test1 event"
+    },
+    "event2" : {
+      "date" : "2018-06-18",
+      "dateForCell" : "18-06-2018",
+      "name" : "Test2 event"
+    },
+    "event3" : {
+      "date" : "2018-06-21",
+      "dateForCell" : "21-06-2018",
+      "name" : "Test3 event"
+    }
+  },
+  "userProfile" : {
+    "17BCE2246" : {
+      "name" : "Sarvad",
+      "password" : "1234567",
+      "regno" : "17BCE2246",
+      "role" : "CORE MEMBER",
+      "team" : "Technical",
+      "work" : {
+        "work1" : {
+          "about" : "sponsorship",
+          "organisation" : "WOLFRAM",
+          "task" : "send mail",
+          "taskValue" : 0
+        },
+        "work2" : {
+          "about" : "class room request",
+          "organisation" : "HOD",
+          "task" : "request for classroom",
+          "taskValue" : 0
+        }
+      }
+    }
+  }
+}
