@@ -11,10 +11,12 @@ import UICircularProgressRing
 import ChameleonFramework
 import Firebase
 import SwiftyJSON
+import SwiftKeychainWrapper
 class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource,UITableViewDelegate,UITableViewDataSource,UICircularProgressRingDelegate,UICollectionViewDelegate,UICollectionViewDataSource{
     
     var totalDB : DatabaseReference!
     var updateDB : DatabaseReference!
+    var monthmeetingDB: DatabaseReference!
     //MARK:IBOutlets
     @IBOutlet var monthlyPicker: UIPickerView!
     @IBOutlet var attendenceTable: UITableView!
@@ -27,6 +29,7 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
 
     
     //MARK:INITIALISATION-
+    
     let modeArray : [String] = ["Monthly","Weekly"]
     let monthArray : [String] = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
     var totalMeetings:Int = 4
@@ -39,6 +42,7 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
     let currentDate = Date()
     let formatter = DateFormatter()
     var currentMonth:String = ""
+    var totalMeetingsKeychain:Bool = true
 
     //==========================================================================================
 
@@ -65,7 +69,12 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
     
     //MARK:  AttendenceTableView Methods:
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        
+        
+        
+        return totalMeetings
+        
+        
         
     }
     
@@ -79,10 +88,7 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
         
         return cell
     }
-    //Custom month:
-//    @objc func customMonth(month:String,tap:UITapGestureRecognizer){
-//        //print("\n",month,"\n")
-//    }
+   
     //==========================================================================================
 
     //MARK: CircularRingProperties
@@ -135,35 +141,37 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
     
     //MARK: Networking
     
-    func getTotalMeetings(){
+     func getTotalMeetings(completionHandler:@escaping (Int)->Void){
         
         totalDB.observe(.value) { (snapshot) in
             if let data = snapshot.value as? Dictionary<String,AnyObject> {
                 let jsonData = JSON(data)
-               
-                print("\n\n\n\n",jsonData,"\n\n\n\n\n")
-                self.totalMeetings=jsonData["Total"].intValue
-                print(self.totalMeetings)
                 
+                self.totalMeetings=jsonData["Total"].intValue
+                completionHandler(self.totalMeetings)
+                print("\n\n\n\n",jsonData,"\n\n\n\n\n")
+       
             }
         }
   
     }
-   
- //    func getDate(){
-    //
-    //
-    //    }
-    //    func getStatus(){
-    //
-    //    }
     //==========================================================================================
 
     //MARK:ViewDidLoad()
     override func viewDidLoad() {
        super.viewDidLoad()
+        
         totalDB = Database.database().reference().child("attendence")
         updateDB = Database.database().reference()
+        getTotalMeetings { total in
+            
+            DispatchQueue.main.async {
+                self.totalMeetings = total
+                self.attendenceTable.reloadData()
+            }
+            
+        }
+        print("\n\n\t\t\t\n",totalMeetings)
         monthCollectionViewFlowLayout.minimumLineSpacing=0
         monthlyPicker.delegate=self
         monthCollectionView.delegate=self
@@ -173,7 +181,6 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
         attendenceTable.dataSource=self
         circularRing()
         attendenceTable.separatorStyle = .none
-        getTotalMeetings()
         formatter.dateFormat = "Mon"
         currentMonth = monthArray[Int(formatter.string(from: currentDate))!-1]
         print("\n\n\n",currentMonth,"\n\n\n\n\n")

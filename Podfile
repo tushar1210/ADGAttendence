@@ -11,4 +11,5 @@ target 'Attendence' do
     pod 'UICircularProgressRing'
     pod 'ChameleonFramework'
     pod 'SwiftyJSON'
+    pod 'SwiftKeychainWrapper'
 end

@@ -33,6 +33,7 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - SwiftKeychainWrapper (3.0.1)
   - SwiftyJSON (4.1.0)
   - UICircularProgressRing (2.1.0)
 
@@ -40,6 +41,7 @@ DEPENDENCIES:
   - ChameleonFramework
   - Firebase
   - Firebase/Database
+  - SwiftKeychainWrapper
   - SwiftyJSON
   - UICircularProgressRing
 
@@ -54,6 +56,7 @@ SPEC REPOS:
     - GoogleToolboxForMac
     - leveldb-library
     - nanopb
+    - SwiftKeychainWrapper
     - SwiftyJSON
     - UICircularProgressRing
 
@@ -67,9 +70,10 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  SwiftKeychainWrapper: 38952a3636320ae61bad3513cadd870929de7a4a
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
   UICircularProgressRing: 01b8f67bbaca7e3a83ccfa67630fe059a51211d1
 
-PODFILE CHECKSUM: ea290abb566b7761790f73780949492a0b180b04
+PODFILE CHECKSUM: 5a4d089512714d52adb1d74427d037688315c52d
 
 COCOAPODS: 1.5.2
