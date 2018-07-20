@@ -104,6 +104,7 @@
 		400402A420B8C09F00B16F2F /* Support files */ = {
 			isa = PBXGroup;
 			children = (
+				4088108720AB39CE00294146 /* AppDelegate.swift */,
 				40D7939520E74FC00093794B /* Fonts */,
 				40CEF19320C6FB9900F486A8 /* RealmSwift_BridgeHeader.m */,
 				40CEF19520C71ECE00F486A8 /* Objc-Bridge-Header.h */,
@@ -143,7 +144,6 @@
 		4088108620AB39CE00294146 /* Internals */ = {
 			isa = PBXGroup;
 			children = (
-				4088108720AB39CE00294146 /* AppDelegate.swift */,
 				400402A320B8C08700B16F2F /* Controllers */,
 				4090ABCA20C078BB005E8142 /* Models */,
 				400402A420B8C09F00B16F2F /* Support files */,
@@ -493,7 +493,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B83FA9FRNM;
+				DEVELOPMENT_TEAM = N4FDL334LZ;
 				INFOPLIST_FILE = Internals/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -515,7 +515,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B83FA9FRNM;
+				DEVELOPMENT_TEAM = N4FDL334LZ;
 				INFOPLIST_FILE = Internals/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
